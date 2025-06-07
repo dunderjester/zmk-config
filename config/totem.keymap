@@ -76,8 +76,8 @@
             display-name = "Sym";
             bindings = <
                 &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
-                &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &trans   &trans
-&studio_unlock  &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp EQUAL      &trans           &trans   &kp SLASH  &kp HOME
+                &kp F1    &kp F2  &kp F3    &kp F4      &kp F5         &trans     &trans         &trans           &trans   &trans
+&studio_unlock  &kp F6    &kp F7  &kp F8    &kp F9      &kp F10        &kp UNDER  &kp EQUAL      &trans           &trans   &kp SLASH  &kp HOME
                                   &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
@@ -85,10 +85,10 @@
         Fun {
             display-name = "Fun";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
-                             &trans  &trans  &trans    &trans  &trans  &trans
+        &bootloader  &trans  &trans  &trans  &to 4     &kp K_PLAY_PAUSE  &trans  &kp PRINTSCREEN  &kp END  &kp F1
+        &trans       &trans  &trans  &trans  &trans    &trans            &trans  &trans           &trans   &kp F10
+&trans  &trans       &trans  &trans  &trans  &trans    &trans            &trans  &trans           &trans   &kp F20  &kp F7
+                             &trans  &trans  &trans    &trans            &trans  &trans
             >;
         };
 
