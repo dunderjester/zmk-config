@@ -65,30 +65,30 @@
         Nav {
             display-name = "Nav";
             bindings = <
-              &kp TILDE       &trans     &kp UP_ARROW  &trans     &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-              &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS  &trans        &kp PLUS   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
-                                         &trans        &trans     &trans      &trans    &trans        &kp DOT
+              &trans          &kp HOME       &kp UP_ARROW  &kp END      &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+              &kp LEFT_SHIFT  &kp LEFT       &kp DOWN      &kp RIGHT    &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp LEFT_ALT  &kp LEFT_WIN    &kp PAGE_DOWN  &trans        &kp PAGE_UP  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp PLUS
+                                             &trans        &trans       &trans      &trans    &trans        &kp DOT
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-                &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
-                &kp F1    &kp F2  &kp F3    &kp F4      &kp F5         &trans     &trans         &trans           &trans   &trans
-&studio_unlock  &kp F6    &kp F7  &kp F8    &kp F9      &kp F10        &kp UNDER  &kp EQUAL      &trans           &trans   &kp SLASH  &kp HOME
-                                  &trans    &trans      &trans         &trans     &trans         &trans
+           &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
+           &kp F1    &kp F2  &kp F3    &kp F4      &kp F5         &trans     &trans         &trans           &trans   &kp PIPE
+&kp TILDE  &kp F6    &kp F7  &kp F8    &kp F9      &kp F10        &kp UNDER  &kp EQUAL      &trans           &trans   &kp SLASH  &kp HOME
+                             &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
 
         Fun {
             display-name = "Fun";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &to 4     &kp K_PLAY_PAUSE  &trans  &kp PRINTSCREEN  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &trans    &trans            &trans  &trans           &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans            &trans  &trans           &trans   &kp F20  &kp F7
-                             &trans  &trans  &trans    &trans            &trans  &trans
+        &trans  &trans  &trans  &trans  &to 4        &kp K_PLAY_PAUSE  &trans  &kp PRINTSCREEN  &trans  &kp F1
+        &trans  &trans  &trans  &trans  &trans       &trans            &trans  &trans           &trans  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans       &trans            &trans  &trans           &trans  &kp F20  &kp F7
+                        &trans  &trans  &kp ENTER    &trans            &trans  &trans
             >;
         };
 
