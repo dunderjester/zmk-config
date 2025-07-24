@@ -65,10 +65,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-              &trans          &kp HOME       &kp UP_ARROW  &kp END      &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-              &kp LEFT_SHIFT  &kp LEFT       &kp DOWN      &kp RIGHT    &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_ALT  &kp LEFT_WIN    &kp PAGE_DOWN  &trans        &kp PAGE_UP  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp PLUS
-                                             &trans        &trans       &trans      &trans    &trans        &kp DOT
+              &trans          &kp HOME   &trans    &kp END    &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+              &kp LEFT_SHIFT  &kp PG_DN  &kp UP    &kp PG_UP  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp LEFT_ALT  &kp LEFT_WIN    &kp LEFT   &kp DOWN  &kp RIGHT  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp PLUS
+                                         &trans    &trans     &trans      &trans    &trans        &kp DOT
             >;
         };
 
@@ -85,10 +85,10 @@
         Fun {
             display-name = "Fun";
             bindings = <
-        &trans  &trans  &trans  &trans  &to 4        &kp C_PLAY_PAUSE  &trans  &kp PRINTSCREEN  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans       &trans            &trans  &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans            &trans  &trans           &trans  &trans  &trans
-                        &trans  &trans  &kp ENTER    &trans            &trans  &trans
+        &trans  &trans  &trans  &trans         &to 4        &kp C_PLAY_PAUSE  &trans  &kp PRINTSCREEN  &trans  &trans
+        &trans  &trans  &trans  &trans         &trans       &trans            &trans  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans       &trans            &trans  &trans           &trans  &trans  &trans
+                        &trans  &kp BACKSPACE  &kp ENTER    &trans            &trans  &trans
             >;
         };
 
@@ -105,10 +105,10 @@
         Gaming+ {
             display-name = "Game+";
             bindings = <
-       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp T    &kp LG(A)  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
-       &kp L         &kp O         &kp Y         &kp K         &kp G    &kp F5     &kp F7         &trans  &trans  &kp F12
-&to 0  &kp F5        &trans        &trans        &trans        &kp B    &trans     &trans         &trans  &trans  &kp F22          &kp LA(F4)
-                                   &kp J         &kp I         &kp M    &trans     &trans         &trans
+       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp T    &kp LG(A)  &trans  &trans  &trans  &kp LC(RA(DEL))
+       &kp L         &kp O         &kp Y         &kp K         &kp G    &kp F5     &kp F7  &trans  &trans  &kp F12
+&to 0  &kp F5        &trans        &trans        &trans        &kp B    &trans     &trans  &trans  &trans  &kp F22          &kp LA(F4)
+                                   &kp J         &kp I         &kp M    &trans     &trans  &trans
             >;
         };
 
