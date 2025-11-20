@@ -91,40 +91,40 @@
         Sym {
             display-name = "Sym";
             bindings = <
-           &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp MINUS  &kp EQUAL
-           &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &trans     &trans
-&kp GRAVE  &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &trans     &trans     &trans
-                             &trans    &trans      &trans         &trans     &trans         &trans
+           &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND    &kp ASTRK  &kp MINUS  &kp EQUAL
+           &trans    &trans  &trans    &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans           &trans     &trans     &trans
+&kp GRAVE  &trans    &trans  &trans    &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans     &trans     &trans     &trans
+                             &trans    &trans          &trans                  &trans                 &trans           &trans
             >;
         };
 
         Fun {
             display-name = "Fun";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
-                             &trans  &trans  &trans    &trans  &trans  &trans
+                  &bootloader  &trans  &trans  &trans  &kp C_VOLUME_UP    &trans  &kp F9  &kp F10  &kp F11  &kp F12
+                  &trans       &trans  &trans  &trans  &kp C_VOL_DN       &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&kp C_PLAY_PAUSE  &trans       &trans  &trans  &trans  &kp K_MUTE         &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp PRINTSCREEN
+                                       &trans  &trans  &trans             &trans  &trans  &trans
             >;
         };
 
         Gaming {
             display-name = "Game";
             bindings = <
-            &kp Z           &kp X  &kp C      &kp V         &sl 5     &trans  &trans  &trans  &trans  &trans
-            &kp TAB         &kp Q  &kp W      &kp E         &kp R     &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp LCTRL  &kp LEFT_ALT  &trans    &trans  &trans  &trans
+              &kp Z           &kp X  &kp C      &kp V         &kp B     &trans  &trans  &trans  &trans  &trans
+              &kp TAB         &kp Q  &kp W      &kp E         &kp R     &trans  &trans  &trans  &trans  &trans
+&lt 5 ESCAPE  &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LCTRL  &kp LEFT_ALT  &trans    &trans  &trans  &trans
             >;
         };
 
         Gaming+ {
             display-name = "Game+";
             bindings = <
-        &kp F10  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp T     &kp RA(RC(Y))  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
-        &kp L    &kp O         &kp Y         &kp K         &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
-&trans  &to 0    &trans        &trans        &trans        &trans    &trans         &trans         &trans  &trans  &kp F22          &kp LA(F4)
-                               &kp J         &kp I         &kp M     &trans         &trans         &trans
+        &kp F10  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp RA(RC(Y))  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
+        &kp L    &kp O         &kp Y         &kp K         &kp G           &kp F5         &kp F7         &trans  &trans  &kp F12
+&trans  &to 0    &trans        &trans        &trans        &trans          &trans         &trans         &trans  &trans  &kp F22          &kp LA(F4)
+                               &kp J         &kp I         &kp M           &trans         &trans         &trans
             >;
         };
     };
