@@ -78,7 +78,7 @@
             >;
         };
 
-        Nav {
+        NavNum {
             display-name = "Nav";
             bindings = <
         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
@@ -88,7 +88,7 @@
             >;
         };
 
-        Sym {
+        Symb {
             display-name = "Sym";
             bindings = <
            &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND    &kp ASTRK  &kp MINUS  &kp EQUAL
@@ -121,10 +121,10 @@
         Gaming+ {
             display-name = "Game+";
             bindings = <
-        &kp F10  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp RA(RC(Y))  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
-        &kp L    &kp O         &kp Y         &kp K         &kp G           &kp F5         &kp F7         &trans  &trans  &kp F12
-&trans  &to 0    &trans        &trans        &trans        &trans          &trans         &trans         &trans  &trans  &kp F22          &kp LA(F4)
-                               &kp J         &kp I         &kp M           &trans         &trans         &trans
+        &to 0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp T     &kp RA(RC(Y))  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
+        &kp L   &kp O         &kp Y         &kp K         &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
+&trans  &trans  &trans        &trans        &trans        &trans    &trans         &trans         &trans  &trans  &kp F22          &kp LA(F4)
+                              &kp J         &kp I         &kp M     &trans         &trans         &trans
             >;
         };
     };
