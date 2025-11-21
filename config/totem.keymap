@@ -74,8 +74,8 @@
 
         BaseToggle {
             bindings = <&tog 0>;
-            key-positions = <6 7>;
-            layers = <4>;
+            key-positions = <6 7 8>;
+            layers = <4 0>;
         };
     };
 
@@ -93,7 +93,7 @@
         };
 
         NavNum {
-            display-name = "Nav";
+            display-name = "NavNum";
             bindings = <
         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
@@ -102,7 +102,7 @@
             >;
         };
 
-        Symb {
+        Sym {
             display-name = "Sym";
             bindings = <
            &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND    &kp ASTRK  &kp MINUS  &kp EQUAL
