@@ -63,7 +63,21 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        NavNumToggle {
+            bindings = <&tog 1>;
+            key-positions = <16 17 18>;
+            layers = <0 1>;
+        };
+
+        BaseToggle {
+            bindings = <&tog 0>;
+            key-positions = <6 7>;
+            layers = <4>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -92,8 +106,8 @@
             display-name = "Sym";
             bindings = <
            &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND    &kp ASTRK  &kp MINUS  &kp EQUAL
-           &trans    &trans  &trans    &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans           &trans     &trans     &trans
-&kp GRAVE  &trans    &trans  &trans    &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans     &trans     &trans     &trans
+           &trans    &trans  &trans    &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans           &trans     &trans     &kp SINGLE_QUOTE
+&kp GRAVE  &trans    &trans  &trans    &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans     &trans     &kp DOUBLE_QUOTES  &trans
                              &trans    &trans          &trans                  &trans                 &trans           &trans
             >;
         };
