@@ -105,6 +105,12 @@
             key-positions = <6 7>;
             layers = <4 0>;
         };
+
+        G+ {
+            bindings = <&mo 5>;
+            key-positions = <22 23 24>;
+            layers = <4>;
+        };
     };
 
     keymap {
