@@ -80,6 +80,13 @@
             hold-trigger-on-release;
             require-prior-idle-ms = <50>;
         };
+
+        return_base: return_base {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RETURN_BASE";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER>, <&to 0>;
+        };
     };
 
     combos {
@@ -104,10 +111,10 @@
         Base {
             display-name = "Base";
             bindings = <
-                           &kp Q            &kp W            &kp E         &kp R              &kp T        &kp Y      &kp U                  &kp I          &kp O             &kp P
-                           &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G        &kp H      &hmr LSHIFT J          &hmr RCTRL K   &hmr RIGHT_ALT L  &hmr RGUI SEMICOLON
-&hml LS(LA(LCTRL)) ESCAPE  &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N      &kp M                  &kp COMMA      &kp PERIOD        &kp SLASH            &kp RET
-                                                             &fun_game     &lt 2 TAB          &kp SPACE    &lt 1 RET  &kp LS(LA(LG(LCTRL)))  &kp BACKSPACE
+                           &kp Q            &kp W            &kp E         &kp R              &kp T        &kp Y  &kp U                  &kp I          &kp O             &kp P
+                           &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G        &kp H  &hmr LSHIFT J          &hmr RCTRL K   &hmr RIGHT_ALT L  &hmr RGUI SEMICOLON
+&hml LS(LA(LCTRL)) ESCAPE  &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N  &kp M                  &kp COMMA      &kp PERIOD        &kp SLASH            &kp RET
+                                                             &fun_game     &lt 2 TAB          &kp SPACE    &mo 1  &kp LS(LA(LG(LCTRL)))  &kp BACKSPACE
             >;
         };
 
@@ -144,9 +151,9 @@
         Gaming {
             display-name = "Game";
             bindings = <
-         &sl 5             &kp X  &kp C      &kp V         &kp B     &trans  &trans  &trans  &trans  &trans
-         &hm LEFT_GUI TAB  &kp Q  &kp W      &kp E         &kp R     &trans  &kp J   &kp K   &kp L   &kp SEMICOLON
-&kp ESC  &kp LEFT_SHIFT    &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans         &trans
+         &lt 5 Z           &kp X  &kp C      &kp V         &kp B     &trans  &trans  &trans  &trans  &trans
+         &hm LEFT_GUI TAB  &kp Q  &kp W      &kp E         &kp R     &trans  &kp J   &kp K   &kp L   &trans
+&kp ESC  &kp LEFT_SHIFT    &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans  &return_base
                                   &kp LCTRL  &kp LEFT_ALT  &trans    &trans  &trans  &trans
             >;
         };
